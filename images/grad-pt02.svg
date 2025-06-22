@@ -1,0 +1,14 @@
+<svg id="グループ_730" data-name="グループ 730" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.254" height="24.107" viewBox="0 0 19.254 24.107">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_566" data-name="長方形 566" width="19.254" height="24.107" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="パス_246" data-name="パス 246" d="M1,10V4.755L4.941,7.512,9.458,1.64l4.517,5.873,3.936-2.756V10Z" fill="#fff"/>
+  <path id="パス_247" data-name="パス 247" d="M6.317,7.365,9.458,3.281,12.6,7.365,13.765,8.88l1.566-1.1,1.581-1.106V9H2V6.675L3.585,7.784,5.151,8.879ZM9.457,0,4.731,6.145,0,2.836V11H18.911V2.837L14.185,6.145Z" fill="#fff"/>
+  <g id="グループ_729" data-name="グループ 729">
+    <g id="グループ_728" data-name="グループ 728" clip-path="url(#clip-path)">
+      <text id="VIP" transform="translate(0 21.014)" fill="#fff" font-size="12" font-family="Helvetica"><tspan x="0" y="0">VIP</tspan></text>
+    </g>
+  </g>
+</svg>
