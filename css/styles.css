@@ -71,6 +71,21 @@ body {
   display: block;
 }
 
+h2.grad-pt06 {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background: linear-gradient(90deg, #EB00FF 0%, #4D26FF 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  margin: auto;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  margin-bottom: 35px;
+}
+
 h3.grad-pt01 {
   max-width: 480px;
   height: 65px;
@@ -158,6 +173,22 @@ a.grad-pt03 span {
 }
 a.grad-pt03 span svg {
   fill: #fff;
+}
+a.grad-pt07 {
+  max-width: 662px;
+  margin: auto;
+  height: 77px;
+  line-height: 77px;
+  background: linear-gradient(90deg, #4D26FF 0%, #EB00FF 100%);
+  border-radius: 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  margin: auto;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  display: block;
 }
 
 header {
@@ -554,6 +585,7 @@ main .support .support-contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 90px;
 }
 main .support .support-contents .text {
   max-width: 585px;
@@ -570,4 +602,182 @@ main .support .support-contents .text .support-content-deli p {
 main .support .support-contents .img {
   max-width: 450px;
   width: 100%;
+}
+main .premium-member-pt02 {
+  background-color: #F4EAFF;
+  padding: 50px 0;
+  margin-bottom: 90px;
+}
+main .premium-member-pt02 h2 {
+  font-size: 60px;
+  color: #781BF5;
+  text-align: center;
+  position: relative;
+}
+main .premium-member-pt02 h2:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background: #781BF5;
+}
+main .premium-member-pt02 h2 span {
+  position: relative;
+  padding: 0 20px;
+  background-color: #F4EAFF;
+}
+main .premium-member-pt02 .flex-box {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .premium-member-pt02 .flex-box .text-box p {
+  font-size: 18px;
+}
+main .premium-member-pt02 .flex-box .text-box .member-room {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+main .premium-member-pt02 .flex-box .text-box .member-room .member-room-list {
+  max-width: 595px;
+  margin: auto;
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 40px 30px 30px 30px;
+}
+main .premium-member-pt02 .flex-box .text-box .member-room .member-room-list ul li {
+  line-height: 1.7;
+  font-size: 18px;
+}
+main .premium-member-pt02 .flex-box .text-box h4 {
+  font-size: 42px;
+  color: #781BF5;
+  font-weight: 400;
+  margin-top: 50px;
+}
+main .premium-member-pt02 .flex-box .app-moc {
+  max-width: 317px;
+}
+main .live-store .live-store-contents {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+main .live-store .live-store-contents .box {
+  width: 50%;
+}
+main .live-store .live-store-contents .box .content {
+  background-color: #F8F5F4;
+  padding: 50px 85px 30px;
+  min-height: 538px;
+}
+main .live-store .live-store-contents .box .content p {
+  font-size: 18px;
+}
+main .live-store .live-store-contents .box .content ul {
+  margin: 50px 0;
+  list-style: disc;
+  list-style-position: inside;
+}
+main .live-store .live-store-contents .box .content .music-store-video {
+  margin-bottom: 20px;
+}
+main .submission {
+  margin-bottom: 90px;
+  background-color: #F8F5F4;
+}
+main .submission .submission-contents {
+  display: flex;
+  align-items: center;
+}
+main .submission .submission-contents .submission-content-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 35px;
+}
+main .submission .submission-contents .submission-content-text a span img {
+  width: 25px;
+}
+main .submission .submission-contents .submission-content-img {
+  max-width: 748px;
+}
+main .column {
+  background-color: #F4EAFF;
+  padding: 80px 0;
+  margin-bottom: 90px;
+}
+main .column h2 {
+  font-size: 40px;
+  color: #781BF5;
+  margin-bottom: 20px;
+}
+main .column h2 span svg {
+  width: 168px;
+}
+main .column p {
+  margin-bottom: 30px;
+}
+main .column p span svg {
+  width: 67px;
+}
+main .live-deli-app {
+  background-color: #EBEBEB;
+  padding: 80px 0;
+}
+main .live-deli-app .app-screens .screens-container .phone-mockup {
+  max-width: 384px;
+}
+main .live-deli-app .live-deli-app-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+main .live-deli-app .live-deli-app-text .logo img {
+  width: 143px;
+}
+main .live-deli-app .live-deli-app-text h2 {
+  font-size: 48px;
+  color: #000;
+}
+main .live-deli-app .live-deli-app-text h2 span svg {
+  width: 160px;
+}
+main .live-deli-app p {
+  color: #781BF5;
+  font-size: 28px;
+  text-align: center;
+}
+main .live-deli-app .app-stores-banner .bottom-area {
+  justify-content: center;
+}
+main footer {
+  position: relative;
+  padding: 50px 0;
+}
+main footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+main footer ul li a {
+  font-size: 12px;
+  color: #000;
+}
+main footer .jasrac {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+}
+main footer small {
+  text-align: center;
+  display: block;
+  font-size: 10px;
 }/*# sourceMappingURL=styles.css.map */
