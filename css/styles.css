@@ -507,6 +507,8 @@ main h2.bottom {
   max-width: 430px;
   margin: auto;
   padding-bottom: 10px;
+  line-height: 1.2;
+  font-weight: 400;
 }
 @media screen and (max-width: 991px) {
   main h2.bottom {
@@ -594,9 +596,6 @@ main .about .deli {
 main .about .deli .deli-banner {
   max-width: 400px;
 }
-main .feature .title {
-  padding: 20px 0;
-}
 main .feature .title h2 svg {
   width: 190px;
 }
@@ -615,6 +614,7 @@ main .feature .title p {
   text-align: center;
   font-size: 42px;
   letter-spacing: 0.1em;
+  line-height: 1.5;
 }
 @media screen and (max-width: 991px) {
   main .feature .title p {

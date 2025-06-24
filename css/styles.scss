@@ -458,6 +458,8 @@ main{
       max-width: 430px;
       margin: auto;
       padding-bottom: 10px;
+      line-height: 1.2;
+      font-weight: 400;
       @media screen and (max-width: 991px) {
         max-width: 200px;
      }
@@ -534,7 +536,6 @@ main{
   }
   .feature{
     .title{
-      padding: 20px 0;
       h2{
         svg{
           width: 190px;
@@ -553,6 +554,7 @@ main{
         text-align: center;
         font-size: 42px;
         letter-spacing: .1em;
+        line-height: 1.5;
         @media screen and (max-width: 991px) {
           font-size: 28px;
         }
