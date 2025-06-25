@@ -17,6 +17,12 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
+  <script src="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+  "></script>
+  <link href="
+  https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+  " rel="stylesheet">
 </head>
 
 <body>
@@ -34,6 +40,11 @@
           <li><a href="#">ダウンロード</a></li>
         </ul>
       </nav>
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
   <main>
@@ -563,10 +574,10 @@
       </div>
       <div class="app-screens-wrap">
         <div class="container">
-          <div class="wrap">
-            <div class="app-screens">
-              <div class="screens-container">
-                <div class="phone-mockup">
+          <div class="wrap splide">
+            <div class="app-screens splide__track">
+              <div class="screens-container splide__list">
+                <div class="phone-mockup splide__slide">
                   <figure>
                     <img src="./images/phone-mockup12.png" alt="">
                     <figcaption>
@@ -586,7 +597,7 @@
                     </figcaption>
                   </figure>
                 </div>
-                <div class="phone-mockup">
+                <div class="phone-mockup splide__slide">
                   <figure>
                     <img src="./images/phone-mockup13.png" alt="">
                     <figcaption>
@@ -606,7 +617,7 @@
                     </figcaption>
                   </figure>
                 </div>
-                <div class="phone-mockup last-child01">
+                <div class="phone-mockup last-child01 splide__slide">
                   <figure>
                     <img src="./images/phone-mockup14.png" alt="">
                     <figcaption class="little-left">
@@ -680,10 +691,10 @@
       </div>
       <div class="app-screens-wrap">
         <div class="container">
-          <div class="wrap">
-            <div class="app-screens">
-              <div class="screens-container">
-                <div class="phone-mockup last-child02">
+          <div class="wrap splide">
+            <div class="app-screens splide__track">
+              <div class="screens-container splide__list">
+                <div class="phone-mockup last-child02 splide__slide">
                   <figure>
                     <img src="./images/phone-mockup15.png" alt="">
                     <figcaption class="fix-width">
@@ -703,7 +714,7 @@
                     </figcaption>
                   </figure>
                 </div>
-                <div class="phone-mockup">
+                <div class="phone-mockup splide__slide">
                   <figure>
                     <img src="./images/phone-mockup16.png" alt="">
                     <figcaption>
@@ -723,7 +734,7 @@
                     </figcaption>
                   </figure>
                 </div>
-                <div class="phone-mockup">
+                <div class="phone-mockup splide__slide">
                   <figure>
                     <img src="./images/phone-mockup17.png" alt="">
                     <figcaption>
@@ -1308,6 +1319,15 @@
       </div>
     </footer>
   </main>
+  <script>
+    if (window.innerWidth <= 1024) {
+      var elms = document.getElementsByClassName('splide');
+
+      for (var i = 0; i < elms.length; i++) {
+        new Splide(elms[i]).mount();
+      }
+    }
+  </script>
 </body>
 
 </html>

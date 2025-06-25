@@ -65,6 +65,8 @@ body{
       max-width: 330px;
       @media screen and (max-width: 1024px) {
         margin-bottom: 25px;
+        position: sticky;
+        top:70px;
       }
     }
   }
@@ -253,44 +255,71 @@ header{
   width: 100%;
   z-index: 9999;
   background-color: rgb(255, 255, 255, .9);
-  .logo{
-    position: absolute;
-    left: 40px;
-    top: 30px;
-  }
-  nav{
-    display: block;
-    position: relative;
-    padding: 45px 37px;
+  .container{
     @media screen and (max-width: 800px) {
-      transform: translateX(100%);
-      transition: transform 0.4s;
+       display: flex;
+       justify-content: space-between; 
+       align-items: center;
+       height: 70px;
     }
-    ul{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      @media screen and (max-width: 1199px) {
-        gap: 30px;
-      }
-      @media screen and (max-width: 991px) {
-        gap: 20px;
-      }
+    .logo{
+      position: absolute;
+      left: 40px;
+      top: 30px;
+      max-width: 52px;
       @media screen and (max-width: 800px) {
-        display: block;
+        position: relative;
+        top: unset;
+        left: unset;
       }
-      li{
-        a{
-          color: #000;
-          font-size: 18px;
-          @media screen and (max-width: 1199px) {
-            font-size: 17px; 
-          }
-          @media screen and (max-width: 991px) {
-            font-size: 14px; 
+    }
+    nav{
+      display: block;
+      position: relative;
+      padding: 45px 37px;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 1199px) {
+          gap: 30px;
+        }
+        @media screen and (max-width: 991px) {
+          gap: 20px;
+        }
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+        li{
+          a{
+            color: #000;
+            font-size: 18px;
+            @media screen and (max-width: 1199px) {
+              font-size: 17px; 
+            }
+            @media screen and (max-width: 991px) {
+              font-size: 14px; 
+            }
           }
         }
+      }
+    }
+    button{
+      @media screen and (min-width: 801px) {
+         display: none;
+      }
+      width: 23px;
+      height: 18px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      span{
+        border-bottom: 3px solid #000;
+        width: 100%;
       }
     }
   }
@@ -304,18 +333,30 @@ main{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 800px) {
+        max-width: 336px;
+      }
       .app-icon{
         max-width: 200px;
         width: 100%;
+        @media screen and (max-width: 800px) {
+          max-width: 120px;
+        }
         p{
           font-size: 20px;
           color: $theme-color;
           text-align: center;
+          @media screen and (max-width: 800px) {
+            font-size: 11px;
+          }
         }
       }
       .catchcopy{
         max-width: 273px;
         width: 100%;
+        @media screen and (max-width: 800px) {
+          max-width: 195px;
+        }
       }
     }
     .catchphrase{
@@ -338,11 +379,17 @@ main{
         padding: 3px 0;
         font-size: 30px;
         font-weight: 300;
+        @media screen and (max-width: 800px) {
+          font-size: 20px;
+        }
         span{
           display: block;
           svg{
             width: 106px;
             fill: #fff;
+            @media screen and (max-width: 800px) {
+              width: 68px;
+            }
           }
         }
       }
@@ -520,6 +567,7 @@ main{
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             width: 70px;
+            z-index: 2;
           }
         }
       }
@@ -708,7 +756,7 @@ main{
         position: absolute;
         left: 40px;
         bottom:30px;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1024px) {
           position: relative;
           left: unset;
           bottom: unset;
@@ -719,6 +767,9 @@ main{
           border-radius: 50px;
           background-color: #fff;
           padding: 40px 30px 30px 30px;
+          @media screen and (max-width: 1024px) {
+            margin: auto;
+          }
           ul{
             li{
               line-height: 1.7;
@@ -734,8 +785,17 @@ main{
       background-color: #F8F5F4;
       padding: 40px 0;
       margin-bottom:90px;
+      .container{
+        @media screen and (max-width: 1024px) {
+          padding: 0;
+        }
+      }
       .app-screens{
         .screens-container{
+          @media screen and (max-width: 1024px) {
+            flex-direction: unset;
+            justify-content: space-between;   
+          }
           .phone-mockup{
             max-width: 246px;
             &.last-child01{
@@ -752,6 +812,12 @@ main{
                 font-weight: bold;
                 color: $theme-color;
                 position: relative;
+                line-height: 1.5;
+                @media screen and (max-width: 1024px) {
+                  font-size: 24px;
+                  font-weight: 300;
+
+                }
                 &.little-left{
                   left: -35px;
                 }
@@ -762,6 +828,9 @@ main{
                   &.pt02{
                     right:-60%;
                   }
+                  @media screen and (max-width: 1024px) {
+                     display: none; 
+                  }
                 }
                 &.fix-width{
                   max-width: 246px;
@@ -769,6 +838,10 @@ main{
                   margin-right: auto;
                 }
               }
+            }
+            @media screen and (max-width: 1024px) {
+               position: relative; 
+               top: unset;
             }
           }
         }

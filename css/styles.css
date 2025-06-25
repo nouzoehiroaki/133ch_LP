@@ -81,6 +81,8 @@ body {
 @media screen and (max-width: 1024px) {
   .app-screens .screens-container .phone-mockup {
     margin-bottom: 25px;
+    position: sticky;
+    top: 70px;
   }
 }
 
@@ -278,56 +280,87 @@ header {
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.9);
 }
-header .logo {
+@media screen and (max-width: 800px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+}
+header .container .logo {
   position: absolute;
   left: 40px;
   top: 30px;
+  max-width: 52px;
 }
-header nav {
+@media screen and (max-width: 800px) {
+  header .container .logo {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+}
+header .container nav {
   display: block;
   position: relative;
   padding: 45px 37px;
 }
 @media screen and (max-width: 800px) {
-  header nav {
-    transform: translateX(100%);
-    transition: transform 0.4s;
+  header .container nav {
+    display: none;
   }
 }
-header nav ul {
+header .container nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 @media screen and (max-width: 1199px) {
-  header nav ul {
+  header .container nav ul {
     gap: 30px;
   }
 }
 @media screen and (max-width: 991px) {
-  header nav ul {
+  header .container nav ul {
     gap: 20px;
   }
 }
 @media screen and (max-width: 800px) {
-  header nav ul {
+  header .container nav ul {
     display: block;
   }
 }
-header nav ul li a {
+header .container nav ul li a {
   color: #000;
   font-size: 18px;
 }
 @media screen and (max-width: 1199px) {
-  header nav ul li a {
+  header .container nav ul li a {
     font-size: 17px;
   }
 }
 @media screen and (max-width: 991px) {
-  header nav ul li a {
+  header .container nav ul li a {
     font-size: 14px;
   }
+}
+header .container button {
+  width: 23px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 801px) {
+  header .container button {
+    display: none;
+  }
+}
+header .container button span {
+  border-bottom: 3px solid #000;
+  width: 100%;
 }
 
 main .first-view {
@@ -340,18 +373,38 @@ main .first-view .logo-section {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 800px) {
+  main .first-view .logo-section {
+    max-width: 336px;
+  }
+}
 main .first-view .logo-section .app-icon {
   max-width: 200px;
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  main .first-view .logo-section .app-icon {
+    max-width: 120px;
+  }
 }
 main .first-view .logo-section .app-icon p {
   font-size: 20px;
   color: #781BF5;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  main .first-view .logo-section .app-icon p {
+    font-size: 11px;
+  }
+}
 main .first-view .logo-section .catchcopy {
   max-width: 273px;
   width: 100%;
+}
+@media screen and (max-width: 800px) {
+  main .first-view .logo-section .catchcopy {
+    max-width: 195px;
+  }
 }
 main .first-view .catchphrase {
   margin: auto;
@@ -377,12 +430,22 @@ main .first-view .catchphrase p {
   font-size: 30px;
   font-weight: 300;
 }
+@media screen and (max-width: 800px) {
+  main .first-view .catchphrase p {
+    font-size: 20px;
+  }
+}
 main .first-view .catchphrase p span {
   display: block;
 }
 main .first-view .catchphrase p span svg {
   width: 106px;
   fill: #fff;
+}
+@media screen and (max-width: 800px) {
+  main .first-view .catchphrase p span svg {
+    width: 68px;
+  }
 }
 @media screen and (max-width: 800px) {
   main .first-view .description {
@@ -585,6 +648,7 @@ main .about .app-screens .screens-container .logo {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     width: 70px;
+    z-index: 2;
   }
 }
 main .about .deli {
@@ -767,7 +831,7 @@ main .premium-member .premium-member-room .member-room {
   left: 40px;
   bottom: 30px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   main .premium-member .premium-member-room .member-room {
     position: relative;
     left: unset;
@@ -781,6 +845,11 @@ main .premium-member .premium-member-room .member-room .member-room-list {
   background-color: #fff;
   padding: 40px 30px 30px 30px;
 }
+@media screen and (max-width: 1024px) {
+  main .premium-member .premium-member-room .member-room .member-room-list {
+    margin: auto;
+  }
+}
 main .premium-member .premium-member-room .member-room .member-room-list ul li {
   line-height: 1.7;
   font-size: 18px;
@@ -789,6 +858,17 @@ main .slide-sec .app-screens-wrap {
   background-color: #F8F5F4;
   padding: 40px 0;
   margin-bottom: 90px;
+}
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container {
+    flex-direction: unset;
+    justify-content: space-between;
+  }
 }
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup {
   max-width: 246px;
@@ -806,6 +886,13 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
   font-weight: bold;
   color: #781BF5;
   position: relative;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption {
+    font-size: 24px;
+    font-weight: 300;
+  }
 }
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption.little-left {
   left: -35px;
@@ -818,10 +905,21 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption .to-right.pt02 {
   right: -60%;
 }
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption .to-right {
+    display: none;
+  }
+}
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption.fix-width {
   max-width: 246px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup {
+    position: relative;
+    top: unset;
+  }
 }
 main .faq {
   background-color: #F8F5F4;
