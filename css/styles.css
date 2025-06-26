@@ -314,22 +314,11 @@ header .container nav {
 }
 header .container nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 40px;
   line-height: 20px;
   max-width: 867px;
   margin: auto;
-}
-@media screen and (max-width: 1199px) {
-  header .container nav ul {
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 991px) {
-  header .container nav ul {
-    gap: 20px;
-  }
 }
 @media screen and (max-width: 800px) {
   header .container nav ul {
@@ -375,7 +364,6 @@ main .first-view .logo-section {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media screen and (max-width: 800px) {
   main .first-view .logo-section {
@@ -409,6 +397,7 @@ main .first-view .logo-section .app-icon p {
 main .first-view .logo-section .catchcopy {
   max-width: 273px;
   width: 100%;
+  padding-top: 30px;
 }
 @media screen and (max-width: 800px) {
   main .first-view .logo-section .catchcopy {
@@ -827,6 +816,9 @@ main .premium-member .premium-member-room {
   position: relative;
   padding-bottom: 75px;
 }
+main .premium-member .premium-member-room .description {
+  margin-top: 0;
+}
 main .premium-member .premium-member-room .description p.text {
   font-size: 20px;
 }
@@ -1050,7 +1042,7 @@ main .streamer .wrap .streamer-contents .content .streamer-wrap h4 {
 main .streamer .wrap .streamer-contents .content .streamer-wrap p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 991px) {
   main .streamer .wrap .streamer-contents .content .streamer-wrap p {
