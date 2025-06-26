@@ -30,6 +30,7 @@ body {
 
 .bg {
   background: #781BF5;
+  padding: 5px 0;
 }
 
 .description {
@@ -582,7 +583,7 @@ main h2.bottom {
   margin: auto;
   padding-bottom: 5px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media screen and (max-width: 991px) {
   main h2.bottom {
@@ -674,6 +675,9 @@ main .about .deli {
 main .about .deli .deli-banner {
   max-width: 400px;
 }
+main .feature .bg {
+  padding: 20px 0px;
+}
 main .feature .title h2 svg {
   width: 190px;
 }
@@ -735,7 +739,7 @@ main .feature .plans .table-wrap table tr th.plan-name {
   vertical-align: top;
   width: 175px;
   text-align: left;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media screen and (max-width: 800px) {
   main .feature .plans .table-wrap table tr th.plan-name {
@@ -744,10 +748,10 @@ main .feature .plans .table-wrap table tr th.plan-name {
   }
 }
 main .feature .plans .table-wrap table tr th.plan-name span.plan-bullet {
-  font-size: 18px;
+  font-size: 10px;
   margin-right: 5px;
   position: relative;
-  top: -1px;
+  top: -5px;
 }
 main .feature .plans .table-wrap table tr td.plan-details {
   padding: 15px 0;
@@ -761,6 +765,7 @@ main .feature .plans .table-wrap table tr td.plan-details .price-row {
 }
 main .feature .plans .table-wrap table tr td.plan-details .price-row .price {
   font-size: 24px;
+  font-weight: 300;
 }
 @media screen and (max-width: 800px) {
   main .feature .plans .table-wrap table tr td.plan-details .price-row .price {
@@ -770,8 +775,11 @@ main .feature .plans .table-wrap table tr td.plan-details .price-row .price {
 main .feature .plans .table-wrap table tr td.plan-details .price-row .campaign-badge {
   background-color: #ff0009;
   color: #fff;
-  padding: 5px 10px;
-  font-size: 22px;
+  font-size: 1.4rem;
+  width: 190px;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 0.1em;
 }
 @media screen and (max-width: 800px) {
   main .feature .plans .table-wrap table tr td.plan-details .price-row .campaign-badge {
@@ -781,6 +789,7 @@ main .feature .plans .table-wrap table tr td.plan-details .price-row .campaign-b
 main .feature .plans .table-wrap table tr td.plan-details .viewing-time {
   font-size: 24px;
   margin: 15px 0;
+  font-weight: 300;
 }
 @media screen and (max-width: 800px) {
   main .feature .plans .table-wrap table tr td.plan-details .viewing-time {
@@ -788,7 +797,7 @@ main .feature .plans .table-wrap table tr td.plan-details .viewing-time {
   }
 }
 main .feature .plans .table-wrap table tr td.plan-details .plan-note {
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 @media screen and (max-width: 800px) {
   main .feature .plans .table-wrap table tr td.plan-details .plan-note {
@@ -816,6 +825,7 @@ main .premium-member .premium-member-room {
   margin-bottom: 90px;
   border-radius: 20px;
   position: relative;
+  padding-bottom: 75px;
 }
 main .premium-member .premium-member-room .description p.text {
   font-size: 20px;
@@ -854,10 +864,10 @@ main .premium-member .premium-member-room .member-room {
   }
 }
 main .premium-member .premium-member-room .member-room .member-room-list {
-  max-width: 595px;
-  border-radius: 50px;
+  max-width: 594px;
+  border-radius: 30px;
   background-color: #fff;
-  padding: 40px 30px 30px 30px;
+  padding: 55px 35px 35px 32px;
 }
 @media screen and (max-width: 1024px) {
   main .premium-member .premium-member-room .member-room .member-room-list {
@@ -865,8 +875,11 @@ main .premium-member .premium-member-room .member-room .member-room-list {
   }
 }
 main .premium-member .premium-member-room .member-room .member-room-list ul li {
-  line-height: 1.7;
+  line-height: 1.9;
   font-size: 18px;
+}
+main .premium-member .premium-member-room .member-room .member-room-list ul li span.bullet {
+  margin-right: 5px;
 }
 main .slide-sec .app-screens-wrap {
   background-color: #F8F5F4;

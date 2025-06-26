@@ -24,6 +24,7 @@ body{
 }
 .bg{
   background: $theme-color;
+  padding: 5px 0;
 }
 .description{
   margin: 36px 0;
@@ -517,7 +518,7 @@ main{
       margin: auto;
       padding-bottom: 5px;
       line-height: 1;
-      font-weight: 400;
+      font-weight: 300;
       @media screen and (max-width: 991px) {
         max-width: 200px;
      }
@@ -597,6 +598,9 @@ main{
     }
   }
   .feature{
+    .bg{
+      padding: 20px 0px;
+    }
     .title{
       h2{
         svg{
@@ -655,17 +659,17 @@ main{
               vertical-align: top;
               width: 175px;
               text-align: left;
-              font-weight: 400;
+              font-weight: 300;
               @media screen and (max-width: 800px) {
                 width: 155px; 
                 font-size: 16px;
               }
               span{
                 &.plan-bullet{
-                  font-size: 18px;
+                  font-size: 10px;
                   margin-right: 5px;
                   position: relative;
-                  top: -1px;
+                  top: -5px;
                 }
               }
             }
@@ -681,6 +685,7 @@ main{
                 gap: 10px;
                 .price {
                   font-size: 24px;
+                  font-weight: 300;
                   @media screen and (max-width: 800px) {
                     font-size: 14px;
                   }
@@ -688,8 +693,11 @@ main{
                 .campaign-badge {
                   background-color: #ff0009;
                   color: #fff;
-                  padding: 5px 10px;
-                  font-size: 22px;
+                  font-size: 1.4rem;
+                  width: 190px;
+                  text-align: center;
+                  font-weight: 200;
+                  letter-spacing: .1em;
                   @media screen and (max-width: 800px) {
                     font-size: 14px;
                   }
@@ -698,12 +706,13 @@ main{
               .viewing-time {
                 font-size: 24px;
                 margin: 15px 0;
+                font-weight: 300;
                 @media screen and (max-width: 800px) {
                   font-size: 14px;
                 }
               }
               .plan-note {
-                font-size: 20px;
+                font-size: 1.1rem;
                 @media screen and (max-width: 800px) {
                   font-size: 12px;
                 }
@@ -741,6 +750,7 @@ main{
       margin-bottom: 90px;
       border-radius: 20px;
       position: relative;
+      padding-bottom: 75px;
       .description{
         p{
           &.text{
@@ -777,17 +787,22 @@ main{
           margin-bottom: 30px;
         }
         .member-room-list{
-          max-width: 595px;
-          border-radius: 50px;
+          max-width: 594px;
+          border-radius: 30px;
           background-color: #fff;
-          padding: 40px 30px 30px 30px;
+          padding: 55px 35px 35px 32px;
           @media screen and (max-width: 1024px) {
             margin: auto;
           }
           ul{
             li{
-              line-height: 1.7;
+              line-height: 1.9;
               font-size: 18px;
+              span{
+                &.bullet{
+                  margin-right: 5px;
+                }
+              }
             }
           }
         }
