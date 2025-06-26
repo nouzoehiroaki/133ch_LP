@@ -76,7 +76,7 @@ body {
   }
 }
 .app-screens .screens-container .phone-mockup {
-  max-width: 330px;
+  max-width: 352px;
 }
 @media screen and (max-width: 1024px) {
   .app-screens .screens-container .phone-mockup {
