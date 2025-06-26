@@ -789,6 +789,13 @@ main{
         @media screen and (max-width: 1024px) {
           padding: 0;
         }
+        .wrap{
+          &.splide{
+            @media screen and (min-width: 1025px) {
+              visibility: visible !important;   
+            }
+          }
+        }
       }
       .app-screens{
         .screens-container{

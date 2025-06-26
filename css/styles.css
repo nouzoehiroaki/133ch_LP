@@ -864,6 +864,11 @@ main .slide-sec .app-screens-wrap {
     padding: 0;
   }
 }
+@media screen and (min-width: 1025px) {
+  main .slide-sec .app-screens-wrap .container .wrap.splide {
+    visibility: visible !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   main .slide-sec .app-screens-wrap .app-screens .screens-container {
     flex-direction: unset;
