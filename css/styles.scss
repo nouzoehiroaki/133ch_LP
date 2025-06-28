@@ -264,6 +264,22 @@ br{
     }
   }
 }
+#faq{
+  &.anchor {
+    padding-top: 111px !important;
+    @media screen and (max-width: 800px) {
+      padding-top: 70px !important;
+    }
+  }
+}
+#dl{
+  &.anchor {
+    padding-top: 111px !important;
+    @media screen and (max-width: 800px) {
+      padding-top: 70px !important;
+    }
+  }
+}
 .anchor {
   padding-top: 111px;
   margin-top: -111px;

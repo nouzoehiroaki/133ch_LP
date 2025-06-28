@@ -294,6 +294,24 @@ a.grad-pt07 {
   }
 }
 
+#faq.anchor {
+  padding-top: 111px !important;
+}
+@media screen and (max-width: 800px) {
+  #faq.anchor {
+    padding-top: 70px !important;
+  }
+}
+
+#dl.anchor {
+  padding-top: 111px !important;
+}
+@media screen and (max-width: 800px) {
+  #dl.anchor {
+    padding-top: 70px !important;
+  }
+}
+
 .anchor {
   padding-top: 111px;
   margin-top: -111px;
