@@ -1013,6 +1013,8 @@ main{
               transform: translateX(-50%);
               -webkit-transform: translateX(-50%);
               -ms-transform: translateX(-50%);
+              height: 33px;
+              width: 33px;
               &.splide__arrow--prev{
                 left: 40%;
               }

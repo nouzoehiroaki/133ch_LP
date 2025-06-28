@@ -1116,6 +1116,8 @@ main .slide-sec .app-screens-wrap .container .wrap.splide .splide__arrow {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
+  height: 33px;
+  width: 33px;
 }
 main .slide-sec .app-screens-wrap .container .wrap.splide .splide__arrow.splide__arrow--prev {
   left: 40%;
