@@ -958,6 +958,12 @@ main{
         }
         .wrap{
           &.splide{
+            figure{
+              @media screen and (max-width: 585px) {
+                max-width: 246px;
+                margin: auto;
+              }
+            }
             @media screen and (min-width: 1025px) {
               visibility: visible !important;   
             }
@@ -975,6 +981,9 @@ main{
               top:unset;
               bottom: 0;
               margin-top: 20px;
+              transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
               &.splide__arrow--prev{
                 left: 40%;
               }
@@ -1010,6 +1019,9 @@ main{
                     bottom:20px;
                     width: 300px;
                     z-index: 2;
+                    @media screen and (max-width: 585px) {
+                       left: -25px; 
+                    }
                   }
                 }
               }
