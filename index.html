@@ -40,7 +40,7 @@
           <li><a href="#">ダウンロード</a></li>
         </ul>
       </nav>
-      <button>
+      <button class="menu-trigger">
         <span></span>
         <span></span>
         <span></span>
@@ -1267,6 +1267,11 @@
         <small>©株式会社133ch. All Rights Reserved.</small>
       </div>
     </footer>
+    <div class="sp-nav">
+      <nav class="">
+
+      </nav>
+    </div>
   </main>
   <script>
     if (window.innerWidth <= 1024) {
@@ -1302,6 +1307,12 @@
           });
         }
       });
+    });
+    document.querySelector('.menu-trigger').addEventListener('click', function () {
+      const body = document.body;
+      this.classList.toggle('active');
+      document.querySelector('.sp-nav').classList.toggle('open');
+      body.classList.toggle('no-scroll');
     });
   </script>
 </body>
