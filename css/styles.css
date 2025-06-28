@@ -5,16 +5,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-.kozuka-medium {
-  font-family: "kozuka-gothic-pr6n", sans-serif;
-  font-weight: 500;
-}
-
-.kozuka-bold {
-  font-family: "kozuka-gothic-pr6n", sans-serif;
-  font-weight: 700;
-}
-
 .container {
   max-width: 1280px;
   margin: auto;
@@ -307,6 +297,12 @@ a.grad-pt07 {
 .anchor {
   padding-top: 111px;
   margin-top: -111px;
+}
+@media screen and (max-width: 800px) {
+  .anchor {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
 }
 
 header {
@@ -1637,6 +1633,12 @@ main .submission {
     background-position-y: 180px;
   }
 }
+@media screen and (max-width: 585px) {
+  main .submission {
+    background-image: url(../images/submission-sp.png);
+    background-size: contain;
+  }
+}
 main .submission .submission-contents {
   display: flex;
   align-items: center;
@@ -1922,4 +1924,29 @@ main .sp-nav {
 main .sp-nav.open {
   opacity: 1;
   z-index: 2;
+}
+main .sp-nav nav {
+  margin-top: 170px;
+  padding-left: 20px;
+}
+main .sp-nav nav ul li {
+  margin-bottom: 24px;
+  width: 100%;
+}
+main .sp-nav nav ul li a {
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Cooper Black", serif;
+}
+main .sp-nav nav ul li a span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 10px;
+  font-family: "kozuka-gothic-pr6n", sans-serif;
 }/*# sourceMappingURL=styles.css.map */

@@ -33,11 +33,11 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#">ライブ配信アプリ133ch（イサミッチ）とは</a></li>
-          <li><a href="#">特徴</a></li>
-          <li><a href="#">よくある質問</a></li>
-          <li><a href="#">配信者</a></li>
-          <li><a href="#">ダウンロード</a></li>
+          <li><a href="#about">ライブ配信アプリ133ch（イサミッチ）とは</a></li>
+          <li><a href="#feature-user">特徴</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#feature-streamer">配信者</a></li>
+          <li><a href="#dl">ダウンロード</a></li>
         </ul>
       </nav>
       <button class="menu-trigger">
@@ -172,7 +172,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about anchor">
       <div class="bg">
         <div class="container">
           <div class="wrap">
@@ -711,7 +711,7 @@
         </div>
       </div>
     </section>
-    <section class="faq">
+    <section id="faq" class="faq anchor">
       <div class="container">
         <div class="wrap">
           <h2>
@@ -1166,7 +1166,7 @@
         </div>
       </div>
     </section>
-    <section class="live-deli-app">
+    <section id="dl" class="live-deli-app anchor">
       <div class="container">
         <div class="wrap">
           <div class="app-screens">
@@ -1268,8 +1268,14 @@
       </div>
     </footer>
     <div class="sp-nav">
-      <nav class="">
-
+      <nav class="menu">
+        <ul class="nav-menu">
+          <li><a class="modal_id_link" href="#about">About<span>ライブ配信アプリ 133ch（イサミッチ）とは</span></a></li>
+          <li><a class="modal_id_link" href="#feature-user">Feature<span>特徴</span></a></li>
+          <li><a class="modal_id_link" href="#faq">Faq<span>よくある質問</span></a></li>
+          <li><a class="modal_id_link" href="#feature-streamer">Streamer<span>配信者</span></a></li>
+          <li><a class="modal_id_link" href="#dl">Download<span>ダウンロード</span></a></li>
+        </ul>
       </nav>
     </div>
   </main>
@@ -1308,12 +1314,32 @@
         }
       });
     });
-    document.querySelector('.menu-trigger').addEventListener('click', function () {
-      const body = document.body;
+    // document.querySelector('.menu-trigger').addEventListener('click', function () {
+    //   const body = document.body;
+    //   this.classList.toggle('active');
+    //   document.querySelector('.sp-nav').classList.toggle('open');
+    //   body.classList.toggle('no-scroll');
+    // });
+    const trigger = document.querySelector('.menu-trigger');
+    const nav = document.querySelector('.sp-nav');
+    const body = document.body;
+    const menuLinks = document.querySelectorAll('.modal_id_link');
+
+    trigger.addEventListener('click', function () {
       this.classList.toggle('active');
-      document.querySelector('.sp-nav').classList.toggle('open');
+      nav.classList.toggle('open');
       body.classList.toggle('no-scroll');
     });
+
+    // 各メニューリンクをクリックしたときにメニューを閉じる
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        trigger.classList.remove('active');
+        nav.classList.remove('open');
+        body.classList.remove('no-scroll');
+      });
+    });
+
   </script>
 </body>
 
