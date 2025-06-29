@@ -1236,6 +1236,13 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
     padding-bottom: 40px;
   }
 }
+@media screen and (max-width: 585px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption {
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 15px;
+  }
+}
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption.fix-width {
   max-width: 246px;
   margin-left: auto;

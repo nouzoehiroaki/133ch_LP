@@ -1121,6 +1121,11 @@ main{
                   font-size: 24px;
                   padding-bottom: 40px;
                 }
+                @media screen and (max-width: 585px) {
+                  font-size: 20px;
+                  padding-bottom: 20px;
+                  margin-top: 15px;
+                }
                 &.fix-width{
                   max-width: 246px;
                   margin-left: auto;
