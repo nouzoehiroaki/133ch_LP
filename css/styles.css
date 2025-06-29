@@ -32,7 +32,7 @@ body.no-scroll {
 .description p.text {
   font-size: 24px;
   color: #781BF5;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media screen and (max-width: 800px) {
   .description p.text {
@@ -41,6 +41,9 @@ body.no-scroll {
 }
 .description p.text.left {
   text-align: left;
+}
+.description p.text.left span {
+  display: inline-block;
 }
 .description p.text.right {
   text-align: right;
@@ -51,7 +54,7 @@ body.no-scroll {
   }
 }
 .description p.text svg {
-  width: 114px;
+  width: 100px;
 }
 @media screen and (max-width: 800px) {
   .description p.text svg {
@@ -64,9 +67,13 @@ body.no-scroll {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
   .app-screens .screens-container {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .app-screens .screens-container {
     flex-direction: column;
   }
 }
@@ -77,12 +84,13 @@ body.no-scroll {
   .app-screens .screens-container .phone-mockup {
     margin-bottom: 25px;
     position: sticky;
-    top: 70px;
+    top: 111px;
   }
 }
 @media screen and (max-width: 800px) {
   .app-screens .screens-container .phone-mockup {
     max-width: 246px;
+    top: 70px;
   }
 }
 
@@ -118,9 +126,10 @@ h2.grad-pt06 {
   margin: auto;
   font-size: 35px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   margin-bottom: 35px;
+  letter-spacing: 0.1em;
 }
 @media screen and (max-width: 585px) {
   h2.grad-pt06 {
@@ -213,7 +222,7 @@ h3.grad-pt05 {
   margin: auto;
   font-size: 35px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   margin-bottom: 30px;
   letter-spacing: 0.1em;
@@ -370,9 +379,16 @@ header .container nav ul {
   max-width: 867px;
   margin: auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   header .container nav ul {
-    display: block;
+    max-width: 765px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .container nav ul {
+    max-width: 700px;
+    justify-content: center;
+    gap: 30px;
   }
 }
 header .container nav ul li a {
@@ -386,7 +402,7 @@ header .container nav ul li a {
 }
 @media screen and (max-width: 991px) {
   header .container nav ul li a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 header .container button {
@@ -523,9 +539,14 @@ main .first-view .catchphrase p span svg {
   }
 }
 main .first-view .description p.text {
-  font-size: 24px;
+  font-size: 2.22rem;
   line-height: 33px;
   margin-bottom: 17px;
+}
+@media screen and (max-width: 1140px) {
+  main .first-view .description p.text {
+    font-size: 1.7rem;
+  }
 }
 @media screen and (max-width: 800px) {
   main .first-view .description p.text {
@@ -648,7 +669,7 @@ main .history .history-content p {
 main h2 {
   font-size: 60px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
 @media screen and (max-width: 991px) {
   main h2 {
@@ -668,6 +689,9 @@ main h2.bottom {
   main h2.bottom {
     max-width: 200px;
   }
+}
+main h2.bottom span {
+  display: inline-block;
 }
 main h2.left {
   text-align: left;
@@ -817,7 +841,7 @@ main .feature .title p {
   text-align: center;
   font-size: 42px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   margin: 15px 10px;
 }
 @media screen and (max-width: 991px) {
@@ -830,6 +854,13 @@ main .feature .title p {
     margin: 15px 0 0;
   }
 }
+main .feature .description {
+  margin: 36px 0;
+}
+main .feature .description p.text {
+  font-weight: 800;
+  line-height: 1.2;
+}
 main .feature .plans {
   margin: 85px 0;
 }
@@ -841,6 +872,7 @@ main .feature .plans .table-wrap {
   background-color: #FAF6F6;
   border-radius: 20px;
   padding: 65px;
+  padding-bottom: 25px;
   margin: auto;
   max-width: 770px;
   margin-top: -30px;
@@ -967,7 +999,7 @@ main .live-deli .description {
   margin: 40px 0;
 }
 main .live-deli .description p.text svg {
-  width: 98px;
+  width: 100px;
 }
 @media screen and (max-width: 800px) {
   main .live-deli .description p.text svg {
@@ -980,6 +1012,14 @@ main .live-deli .app-screens {
 @media screen and (max-width: 585px) {
   main .live-deli .app-screens {
     margin-bottom: 80px;
+  }
+}
+main .live-deli .app-screens .phone-mockup {
+  max-width: 352px;
+}
+@media screen and (max-width: 800px) {
+  main .live-deli .app-screens .phone-mockup {
+    max-width: 246px;
   }
 }
 main .premium-member .premium-member-room {
@@ -1087,7 +1127,7 @@ main .slide-sec .app-screens-wrap {
     padding: 0;
   }
 }
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 1024px) {
   main .slide-sec .app-screens-wrap .container .wrap.splide figure {
     max-width: 246px;
     margin: auto;
@@ -1146,6 +1186,11 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
   width: 120px;
   z-index: 2;
 }
+@media screen and (max-width: 1278px) and (min-width: 1025px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure .deco-wrap .deco.mockup14 {
+    right: 0;
+  }
+}
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure .deco-wrap .deco.mockup15 {
   left: -10px;
   bottom: 20px;
@@ -1172,19 +1217,6 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
     padding-bottom: 40px;
   }
 }
-main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption .to-right {
-  position: absolute;
-  bottom: 0;
-  right: -42%;
-}
-main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption .to-right.pt02 {
-  right: -60%;
-}
-@media screen and (max-width: 1024px) {
-  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption .to-right {
-    display: none;
-  }
-}
 main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup figure figcaption.fix-width {
   max-width: 246px;
   margin-left: auto;
@@ -1196,10 +1228,19 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
     top: unset;
   }
 }
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 1024px) {
   main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup {
     max-width: unset;
     padding: 0 20px;
+  }
+}
+main .slide-sec .app-screens-wrap .app-screens .screens-container .to-right {
+  display: flex;
+  align-self: end;
+}
+@media screen and (max-width: 1024px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .to-right {
+    display: none;
   }
 }
 @font-face {
@@ -1229,6 +1270,7 @@ main .faq h2 span {
   margin-bottom: 32px;
   font-family: "Cooper Black", serif;
   padding-bottom: 8px;
+  font-size: 24px;
 }
 @media screen and (max-width: 585px) {
   main .faq h2 span {
@@ -1310,7 +1352,7 @@ main .streamer .wrap .streamer-contents .content .streamer-wrap.top ul {
   display: inline-block;
 }
 main .streamer .wrap .streamer-contents .content .streamer-wrap.top ul li {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.8;
 }
@@ -1363,7 +1405,7 @@ main .support h2 {
   }
 }
 main .support h2 svg {
-  width: 159px;
+  width: 160px;
 }
 @media screen and (max-width: 800px) {
   main .support h2 svg {
@@ -1534,7 +1576,7 @@ main .premium-member-pt02 .flex-box .text-box .member-room .member-room-list {
   margin: auto;
   border-radius: 20px;
   background-color: #fff;
-  padding: 40px 30px 30px 30px;
+  padding: 50px 30px 30px 35px;
 }
 @media screen and (max-width: 800px) {
   main .premium-member-pt02 .flex-box .text-box .member-room .member-room-list {
@@ -1695,7 +1737,6 @@ main .submission .submission-contents .submission-content-text h2 {
 @media screen and (max-width: 1269px) {
   main .submission .submission-contents .submission-content-text h2 {
     font-size: 25px;
-    font-weight: 400;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1763,7 +1804,7 @@ main .column h2 {
   }
 }
 main .column h2 span svg {
-  width: 168px;
+  width: 165px;
 }
 @media screen and (max-width: 800px) {
   main .column h2 span svg {
@@ -1772,7 +1813,8 @@ main .column h2 span svg {
 }
 main .column p {
   margin-bottom: 30px;
-  font-size: 1.41em;
+  font-size: 1.13em;
+  max-width: 918px;
 }
 @media screen and (max-width: 800px) {
   main .column p {
@@ -1843,6 +1885,9 @@ main .live-deli-app .live-deli-app-text h2 {
     font-size: 19px;
     line-height: 1.6;
   }
+}
+main .live-deli-app .live-deli-app-text h2 span {
+  display: inline-block;
 }
 main .live-deli-app .live-deli-app-text h2 span svg {
   width: 160px;

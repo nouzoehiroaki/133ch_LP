@@ -27,12 +27,15 @@ body{
     &.text{
       font-size: 24px;
       color: $theme-color;
-      font-weight: 500;
+      font-weight: 600;
       @media screen and (max-width: 800px) {
         font-size: 18px;
       }
       &.left{
         text-align: left;
+        span{
+          display: inline-block;
+        }
       }
       &.right{
         text-align: right;
@@ -41,7 +44,7 @@ body{
         }
       }
       svg{
-        width: 114px;
+        width: 100px;
         @media screen and (max-width: 800px) {
            width: 70px; 
         }
@@ -54,8 +57,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1199px) {
       justify-content: center;
+    }
+    @media screen and (max-width: 1024px) {
       flex-direction: column;
     }
     .phone-mockup{
@@ -63,10 +68,11 @@ body{
       @media screen and (max-width: 1024px) {
         margin-bottom: 25px;
         position: sticky;
-        top:70px;
+        top:111px;
       }
       @media screen and (max-width: 800px) {
         max-width: 246px;
+        top:70px;
       }
     }
   }
@@ -101,9 +107,10 @@ h2{
     margin: auto;
     font-size: 35px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     margin-bottom:35px;
+    letter-spacing: .1em;
     @media screen and (max-width: 585px) {
       width: 100vw;
       position: relative;
@@ -189,7 +196,7 @@ h3{
     margin: auto;
     font-size: 35px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     margin-bottom:30px;
     letter-spacing: .1em;
@@ -334,8 +341,13 @@ header{
         // @media screen and (max-width: 991px) {
         //   gap: 20px;
         // }
-        @media screen and (max-width: 800px) {
-          display: block;
+        @media screen and (max-width: 1024px) {
+          max-width: 765px;
+        }
+        @media screen and (max-width: 991px) {
+          max-width: 700px;
+          justify-content: center;
+          gap: 30px;
         }
         li{
           a{
@@ -345,7 +357,7 @@ header{
               font-size: 17px; 
             }
             @media screen and (max-width: 991px) {
-              font-size: 14px; 
+              font-size: 12px; 
             }
           }
         }
@@ -472,9 +484,12 @@ main{
       }
       p{
         &.text{
-          font-size: 24px;
+          font-size: 2.22rem;
           line-height: 33px;
           margin-bottom: 17px;
+          @media screen and (max-width: 1140px) {
+            font-size: 1.7rem;
+          }
           @media screen and (max-width: 800px) {
             font-size: 19px;
           }
@@ -587,7 +602,7 @@ main{
   h2{
     font-size: 60px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     @media screen and (max-width: 991px) {
       font-size: 32px; 
     }
@@ -601,6 +616,9 @@ main{
       font-weight: 500;
       @media screen and (max-width: 991px) {
         max-width: 200px;
+     }
+     span{
+      display: inline-block;
      }
     }
     &.left{
@@ -737,13 +755,22 @@ main{
         text-align: center;
         font-size: 42px;
         line-height: 1;
-        font-weight: 500;
+        font-weight: 600;
         margin: 15px 10px;
         @media screen and (max-width: 991px) {
           font-size: 28px;
         }
         @media screen and (max-width: 585px) {
             margin: 15px 0 0;
+        }
+      }
+    }
+    .description{
+      margin: 36px 0;
+      p{
+        &.text{
+          font-weight: 800;
+          line-height: 1.2;
         }
       }
     }
@@ -757,6 +784,7 @@ main{
         background-color: #FAF6F6;
         border-radius: 20px;
         padding: 65px;
+        padding-bottom: 25px;
         margin: auto;
         max-width: 770px;
         margin-top: -30px;
@@ -874,7 +902,7 @@ main{
       p{
         &.text{
           svg{
-            width: 98px;
+            width: 100px;
             @media screen and (max-width: 800px) {
                width: 70px; 
             }
@@ -886,6 +914,12 @@ main{
       margin-bottom: 120px;
       @media screen and (max-width: 585px) {
          margin-bottom: 80px; 
+      }
+      .phone-mockup{
+        max-width: 352px;
+        @media screen and (max-width: 800px) {
+          max-width: 246px;
+        }
       }
     }
   }
@@ -988,7 +1022,7 @@ main{
         .wrap{
           &.splide{
             figure{
-              @media screen and (max-width: 585px) {
+              @media screen and (max-width: 1024px) {
                 max-width: 246px;
                 margin: auto;
               }
@@ -1032,8 +1066,7 @@ main{
             justify-content: space-between;   
           }
           .phone-mockup{
-            max-width: 280px;
-            
+            max-width: 280px;           
             figure{
               .deco-wrap{
                 position: relative;
@@ -1044,6 +1077,9 @@ main{
                     bottom:100px;
                     width: 120px;
                     z-index: 2;
+                    @media screen and (max-width: 1278px) and (min-width: 1025px){
+                        right: 0;
+                    }
                   }
                   &.mockup15{
                     left:-10px;
@@ -1068,17 +1104,6 @@ main{
                   font-size: 24px;
                   padding-bottom: 40px;
                 }
-                .to-right{
-                  position: absolute;
-                  bottom:0;
-                  right: -42%;
-                  &.pt02{
-                    right:-60%;
-                  }
-                  @media screen and (max-width: 1024px) {
-                     display: none; 
-                  }
-                }
                 &.fix-width{
                   max-width: 246px;
                   margin-left: auto;
@@ -1090,9 +1115,16 @@ main{
                position: relative; 
                top: unset;
             }
-            @media screen and (max-width: 585px) {
+            @media screen and (max-width:1024px) {
               max-width: unset;
               padding: 0 20px;
+            }
+          }
+          .to-right{
+            display: flex;
+            align-self: end;
+            @media screen and (max-width: 1024px) {
+               display: none; 
             }
           }
         }
@@ -1122,6 +1154,7 @@ main{
         margin-bottom: 32px;
         font-family: "Cooper Black", serif;
         padding-bottom: 8px;
+        font-size: 24px;
         @media screen and (max-width: 585px) {
             font-size: 20px;
         }
@@ -1186,7 +1219,7 @@ main{
                 text-align: left;
                 display: inline-block;
                 li{
-                  font-weight: 500;
+                  font-weight: 600;
                   font-size: 18px;
                   line-height: 1.8;
                   @media screen and (max-width: 800px) {
@@ -1238,7 +1271,7 @@ main{
         font-size: 28px;   
       }
       svg{
-        width: 159px;
+        width: 160px;
         @media screen and (max-width: 800px) {
           width: 113px;
         }
@@ -1379,7 +1412,7 @@ main{
             margin: auto;
             border-radius: 20px;
             background-color: #fff;
-            padding: 40px 30px 30px 30px;
+            padding: 50px 30px 30px 35px;
             @media screen and (max-width: 800px) {
               max-width: unset; 
             }
@@ -1511,7 +1544,6 @@ main{
           line-height: 1.4;
           @media screen and (max-width: 1269px) {
             font-size: 25px;
-            font-weight: 400;
           }
         }
         a{
@@ -1575,7 +1607,7 @@ main{
       }
       span{
         svg{
-          width: 168px;
+          width: 165px;
           @media screen and (max-width: 800px) {
             width: 112px;
           }
@@ -1584,7 +1616,8 @@ main{
     }
     p{
       margin-bottom: 30px;
-      font-size: 1.41em;
+      font-size: 1.13em;
+      max-width: 918px;
       @media screen and (max-width: 800px) {
         font-size: 14px;
       }
@@ -1649,6 +1682,7 @@ main{
          line-height: 1.6;
         }
         span{
+          display: inline-block;
           svg{
             width: 160px;
             @media screen and (max-width: 800px) {
