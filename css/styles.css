@@ -1156,8 +1156,8 @@ main .slide-sec .app-screens-wrap .container .wrap.splide .splide__arrow {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  height: 33px;
-  width: 33px;
+  height: 38px;
+  width: 38px;
 }
 main .slide-sec .app-screens-wrap .container .wrap.splide .splide__arrow.splide__arrow--prev {
   left: 40%;
@@ -1227,6 +1227,22 @@ main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup 
     position: relative;
     top: unset;
   }
+}
+main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup .to-right-sp {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+@media screen and (min-width: 1025px) {
+  main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup .to-right-sp {
+    display: none;
+  }
+}
+main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup .to-right-sp svg {
+  width: 87px;
 }
 @media screen and (max-width: 1024px) {
   main .slide-sec .app-screens-wrap .app-screens .screens-container .phone-mockup {

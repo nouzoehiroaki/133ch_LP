@@ -1047,8 +1047,8 @@ main{
               transform: translateX(-50%);
               -webkit-transform: translateX(-50%);
               -ms-transform: translateX(-50%);
-              height: 33px;
-              width: 33px;
+              height: 38px;
+              width: 38px;
               &.splide__arrow--prev{
                 left: 40%;
               }
@@ -1066,7 +1066,7 @@ main{
             justify-content: space-between;   
           }
           .phone-mockup{
-            max-width: 280px;           
+            max-width: 280px;      
             figure{
               .deco-wrap{
                 position: relative;
@@ -1115,6 +1115,20 @@ main{
                position: relative; 
                top: unset;
             }
+            .to-right-sp{
+              @media screen and (min-width: 1025px) {
+                display: none;
+              }
+              position: absolute;
+              right: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              svg{
+                width: 87px;
+              }
+            }
             @media screen and (max-width:1024px) {
               max-width: unset;
               padding: 0 20px;
@@ -1124,7 +1138,7 @@ main{
             display: flex;
             align-self: end;
             @media screen and (max-width: 1024px) {
-               display: none; 
+              display: none; 
             }
           }
         }
