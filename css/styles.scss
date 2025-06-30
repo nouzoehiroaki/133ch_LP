@@ -28,6 +28,7 @@ body{
       font-size: 24px;
       color: $theme-color;
       font-weight: 600;
+      line-height: 1.6;
       @media screen and (max-width: 800px) {
         font-size: 18px;
       }
@@ -35,6 +36,8 @@ body{
         text-align: left;
         span{
           display: inline-block;
+          margin-right: 3px;
+          vertical-align: text-bottom;
         }
       }
       &.right{
@@ -493,6 +496,9 @@ main{
           @media screen and (max-width: 800px) {
             font-size: 19px;
           }
+          @media screen and (max-width: 373px) {
+            font-size: 16px;
+          }
           span{
             &.issamitch-logo{
               font-family: "Cooper Black", serif;
@@ -500,12 +506,29 @@ main{
               letter-spacing: .06em;
               width: 120px;
               display: inline-block;
+              @media screen and (max-width: 585px) {
+                font-size: 30px;
+                width: 85px;
+              }
+              @media screen and (max-width: 373px) {
+                font-size: 25px;
+                width: 70px;
+              }
               small{
                 font-size: 30px;
+                @media screen and (max-width: 585px) {
+                  font-size: 20px;
+                }
+                @media screen and (max-width: 373px) {
+                  font-size: 15px;
+                }
               }
             }
             &.issamitch{
               font-size: .8rem;
+              @media screen and (max-width: 373px) {
+                font-size: .5rem;
+              }
             }
           }
           
@@ -769,8 +792,8 @@ main{
       margin: 36px 0;
       p{
         &.text{
-          font-weight: 800;
-          line-height: 1.2;
+          font-weight: 600;
+          line-height: 1.6;
         }
       }
     }
